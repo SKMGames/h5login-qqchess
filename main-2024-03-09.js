@@ -43355,14 +43355,13 @@ $jscomp.polyfill("Object.getOwnPropertyDescriptors", function(f) {
                 var a = this._gl
                   , c = this.ext("WEBGL_draw_buffers");
                 this._caps.maxVertexStreams = 4;
-                this._caps.maxVertexTextures = 16; //a.getParameter(a.MAX_VERTEX_TEXTURE_IMAGE_UNITS);
-                this._caps.maxFragUniforms = 1024; // a.getParameter(a.MAX_FRAGMENT_UNIFORM_VECTORS);
-                this._caps.maxTextureUnits = 16; // a.getParameter(a.MAX_TEXTURE_IMAGE_UNITS);
-                this._caps.maxVertexAttribs = 16; // a.getParameter(a.MAX_VERTEX_ATTRIBS);
-                this._caps.maxTextureSize = 16384; // a.getParameter(a.MAX_TEXTURE_SIZE);
-                this._caps.maxDrawBuffers = 1; //c ? a.getParameter(c.MAX_DRAW_BUFFERS_WEBGL) : 1;
-                this._caps.maxColorAttachments = 1; //c ? a.getParameter(c.MAX_COLOR_ATTACHMENTS_WEBGL) : 1
-                console.log("--fx--this._caps", this._caps);
+                this._caps.maxVertexTextures = a.getParameter(a.MAX_VERTEX_TEXTURE_IMAGE_UNITS);
+                this._caps.maxFragUniforms = a.getParameter(a.MAX_FRAGMENT_UNIFORM_VECTORS);
+                this._caps.maxTextureUnits = a.getParameter(a.MAX_TEXTURE_IMAGE_UNITS);
+                this._caps.maxVertexAttribs = a.getParameter(a.MAX_VERTEX_ATTRIBS);
+                this._caps.maxTextureSize = a.getParameter(a.MAX_TEXTURE_SIZE);
+                this._caps.maxDrawBuffers = c ? a.getParameter(c.MAX_DRAW_BUFFERS_WEBGL) : 1;
+                this._caps.maxColorAttachments = c ? a.getParameter(c.MAX_COLOR_ATTACHMENTS_WEBGL) : 1
             }
             ,
             b.prototype._initStates = function() {
