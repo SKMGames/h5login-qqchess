@@ -43346,8 +43346,11 @@ $jscomp.polyfill("Object.getOwnPropertyDescriptors", function(f) {
             }
             ,
             b.prototype._initCaps = function() {
+                var canvas = document.querySelector("#GameCanvas");
+                var thisgl = canvas.getContext("webgl");
                 var a = this._gl
                   , c = this.ext("WEBGL_draw_buffers");
+                a= thisgl; // Fix
                 this._caps.maxVertexStreams = 4;
                 this._caps.maxVertexTextures = a.getParameter(a.MAX_VERTEX_TEXTURE_IMAGE_UNITS);
                 this._caps.maxFragUniforms = a.getParameter(a.MAX_FRAGMENT_UNIFORM_VECTORS);
