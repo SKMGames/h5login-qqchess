@@ -2,6 +2,10 @@
 
 
 (function () {
+    var canvas = document.querySelector("#GameCanvas");
+    var gl = canvas.getContext("webgl");
+    console.log("gl", gl);
+
     if (typeof VConsole !== 'undefined') {
         window.vConsole = new VConsole();
     }
@@ -31,7 +35,7 @@
 
     progressFunc();
     splash.style.display = 'block';
-   
+
 }());
 
 function loadScript(url, callback) {
@@ -86,6 +90,10 @@ function loadScripts(srcList, totalComplete) {
 
 window.StarupQQChess = function( srcList,projectSrc )
 {
+    var canvas = document.querySelector("#GameCanvas");
+    var gl = canvas.getContext("webgl");
+    console.log("gl", gl);
+
     srcList = srcList.map(function (x) {
         return x + ".js";
     });
