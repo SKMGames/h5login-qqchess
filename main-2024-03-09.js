@@ -60024,10 +60024,10 @@ window.boot = function(f) {
         window.electron && window.electron.require("app").quit())
     });
     cc.AssetLibrary.init({
-        // libraryPath: "https://skmgames.github.io/h5login-qqchess/res/import",
-        // rawAssetsBase: "https://skmgames.github.io/h5login-qqchess/res/raw-",
-        libraryPath: "https://36576b1a-466a-47b1-8260-4257e59b3cba-00-quqbjgyga6sh.riker.replit.dev/res/import",
-        rawAssetsBase: "https://36576b1a-466a-47b1-8260-4257e59b3cba-00-quqbjgyga6sh.riker.replit.dev/res/raw-",
+        libraryPath: "https://skmgames.github.io/h5login-qqchess/res/import",
+        rawAssetsBase: "https://skmgames.github.io/h5login-qqchess/res/raw-",
+        // libraryPath: "https://36576b1a-466a-47b1-8260-4257e59b3cba-00-quqbjgyga6sh.riker.replit.dev/res/import",
+        // rawAssetsBase: "https://36576b1a-466a-47b1-8260-4257e59b3cba-00-quqbjgyga6sh.riker.replit.dev/res/raw-",
 
         rawAssets: m.rawAssets,
         packedAssets: m.packedAssets,
