@@ -2,9 +2,9 @@
 
 
 (function () {
-    var canvas = document.querySelector("#GameCanvas");
-    var gl = canvas.getContext("webgl");
-    console.log("gl", gl);
+    var canvasx = document.querySelector("#GameCanvas");
+    var glx = canvasx.getContext("webgl");
+    console.log("glx", glx);
 
     if (typeof VConsole !== 'undefined') {
         window.vConsole = new VConsole();
@@ -90,9 +90,9 @@ function loadScripts(srcList, totalComplete) {
 
 window.StarupQQChess = function( srcList,projectSrc )
 {
-    var canvas = document.querySelector("#GameCanvas");
-    var gl = canvas.getContext("webgl");
-    console.log("gl", gl);
+    var canvasx = document.querySelector("#GameCanvas");
+    var glx = canvasx.getContext("webgl");
+    console.log("glx", glx);
 
     srcList = srcList.map(function (x) {
         return x + ".js";
