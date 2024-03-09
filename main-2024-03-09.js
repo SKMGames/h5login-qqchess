@@ -1,3 +1,7 @@
+var canvas = document.querySelector("#GameCanvas");
+var gl = canvas.getContext("webgl");
+console.log("gl", gl);
+
 var $jscomp = $jscomp || {};
 $jscomp.scope = {};
 $jscomp.arrayIteratorImpl = function(f) {
