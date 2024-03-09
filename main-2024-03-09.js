@@ -60025,8 +60025,8 @@ window.boot = function(f) {
         window.electron && window.electron.require("app").quit())
     });
     cc.AssetLibrary.init({
-        libraryPath: "res/import",
-        rawAssetsBase: "res/raw-",
+        libraryPath: "https://skmgames.github.io/h5login-qqchess/res/import",
+        rawAssetsBase: "https://skmgames.github.io/h5login-qqchess/res/raw-",
         rawAssets: m.rawAssets,
         packedAssets: m.packedAssets,
         md5AssetsMap: m.md5AssetsMap,
